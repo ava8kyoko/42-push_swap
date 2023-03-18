@@ -3,10 +3,10 @@
 /*                                                        :::      ::::::::   */
 /*   main.c                                             :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
-/*   By: acid.burn <acid.burn@student.42.fr>        +#+  +:+       +#+        */
+/*   By: mchampag <mchampag@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2023/02/11 12:04:03 by mchampag          #+#    #+#             */
-/*   Updated: 2023/02/26 11:33:16 by acid.burn        ###   ########.fr       */
+/*   Updated: 2023/02/23 10:33:20 by mchampag         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -30,14 +30,10 @@ static void	sort_small(t_stack *stack)
 
 static void	push_swap(t_stack *stack)
 {
-	if (sub_number(stack, (int)stack->size_a))
-	{
-		if (stack->size_a <= 5)
-			sort_small(stack);
-		else
-			sort_big(stack);
-	}
-	
+	if (stack->size_a <= 5 && sub_number(stack, (int)stack->size_a))
+		sort_small(stack);
+	else if (sub_number(stack, (int)stack->size_a))
+		sort_big(stack);
 }
 
 // size_a : size of stack_a

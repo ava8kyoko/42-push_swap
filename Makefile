@@ -6,7 +6,7 @@
 #    By: mchampag <mchampag@student.42.fr>          +#+  +:+       +#+         #
 #                                                 +#+#+#+#+#+   +#+            #
 #    Created: 2023/02/23 09:25:26 by mchampag          #+#    #+#              #
-#    Updated: 2023/02/23 09:32:10 by mchampag         ###   ########.fr        #
+#    Updated: 2023/02/23 09:56:27 by mchampag         ###   ########.fr        #
 #                                                                              #
 # **************************************************************************** #
 
@@ -53,7 +53,7 @@ init:
 $(NAME): $(OBJ)
 	@$(CC) $(CFLAG) -o $@ $^ $(LIBFT)
 
-# Cleaning/
+# Cleaning
 REMOVE = rm -rf
 
 clean:

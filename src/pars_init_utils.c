@@ -3,10 +3,10 @@
 /*                                                        :::      ::::::::   */
 /*   pars_init_utils.c                                  :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
-/*   By: acid.burn <acid.burn@student.42.fr>        +#+  +:+       +#+        */
+/*   By: mchampag <mchampag@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2023/02/11 12:04:09 by mchampag          #+#    #+#             */
-/*   Updated: 2023/02/26 10:45:02 by acid.burn        ###   ########.fr       */
+/*   Updated: 2023/02/23 09:45:21 by mchampag         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -53,7 +53,7 @@ static int	check_element(char *str)
 	return (1);
 }
 
-// Count number of elements in array, return -1 for invalid element
+//Count number of elements in array, return -1 for invalid element
 static int	check_string(char *str, int count)
 {
 	while (*str)

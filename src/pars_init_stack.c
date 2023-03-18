@@ -3,16 +3,16 @@
 /*                                                        :::      ::::::::   */
 /*   pars_init_stack.c                                  :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
-/*   By: acid.burn <acid.burn@student.42.fr>        +#+  +:+       +#+        */
+/*   By: mchampag <mchampag@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2023/02/11 12:04:11 by mchampag          #+#    #+#             */
-/*   Updated: 2023/02/26 10:44:43 by acid.burn        ###   ########.fr       */
+/*   Updated: 2023/02/23 09:48:23 by mchampag         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "../include/push_swap.h"
 
-// Add a new element to stack
+//Add a new element to stack
 static int	add_element(char *src, int *dest, int size_d)
 {
 	if (!is_valid_int(src))
@@ -23,7 +23,7 @@ static int	add_element(char *src, int *dest, int size_d)
 	return (1);
 }
 
-// Init stack from multiple arguments
+//Init stack from multiple arguments
 static int	init_multi(size_t size, char **src, int *dest)
 {
 	size_t	i;
@@ -42,7 +42,7 @@ static int	init_multi(size_t size, char **src, int *dest)
 	return (0);
 }
 
-// Init stack from a single argument (string)
+//Init stack from a single argument (string)
 static int	init_single(char *src, int *dest, int size, int start)
 {
 	char	*stack;
